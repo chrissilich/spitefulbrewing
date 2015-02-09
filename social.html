@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spiteful Brewing</title>
+	<link rel="stylesheet" href="media/css/reset.css">
+	<link rel="stylesheet" href="media/css/main.css">
+</head>
+<body>
+
+	<div id="instafeed"></div>
+	
+	<script type="text/javascript" src="media/js/bower_components/instafeed.js/instafeed.min.js"></script>
+	<script type="text/javascript">
+	    var feed = new Instafeed({
+	        get: 'tagged',
+	        tagName: 'troll',
+	        clientId: 'bace461363b3428aa23b4fffb420f5c9',
+	        resolution: 'low_resolution'
+	    });
+	    feed.run();
+	</script>
+
+</body>
+</html>
